@@ -32,6 +32,6 @@ class MatchNotValidator extends TranslatedValidator<String> {
 
   @override
   String? validateValue(String valueCandidate) {
-    return !regex.hasMatch(valueCandidate) ? errorText : null;
+    return regex.hasMatch(valueCandidate) ? errorText : null;
   }
 }
